@@ -20,7 +20,7 @@ body {
 .producten {
     background-color: rgb(214, 214, 214);
     display: flex;
-    width: 400px;
+    width: 380px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;

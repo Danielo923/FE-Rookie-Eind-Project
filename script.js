@@ -2,7 +2,7 @@ async function producten() {
     try {
         const response = await fetch('producten.json');
         if (!response.ok) {
-            throw new Error('Failed to fetch heroes');
+            throw new Error('Failed to fetch pals');
         }
         const data = await response.json();
         localStorage.setItem("data", JSON.stringify(data));
@@ -40,4 +40,9 @@ document.addEventListener("keydown", function (event) {
         getproducten();
     }
 });
+function reload() {
+    localStorage.clear();
+    getproducten();
+    console.log("clear");
+}
 getproducten();

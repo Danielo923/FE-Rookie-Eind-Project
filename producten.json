@@ -16,5 +16,41 @@
         "prijs": "1000",
         "beschrijving": "Perpetual Procrastinator",
         "foto": "img/dumud.webp"
+    },
+    {
+        "naam": "Mozzarina",
+        "prijs": "2000",
+        "beschrijving": "Grade A Beef",
+        "foto": "img/mozzarina.webp"
+    },
+    {
+        "naam": "Chikipi",
+        "prijs": "500",
+        "beschrijving": "Plump & Juicy",
+        "foto": "img/chikipi.webp"
+    },
+    {
+        "naam": "Hangyu",
+        "prijs": "600",
+        "beschrijving": "Bringer of Luck",
+        "foto": "img/hangyu.webp"
+    },
+    {
+        "naam": "Bushi",
+        "prijs": "800",
+        "beschrijving": "Vagrant Warrior",
+        "foto": "img/bushi.webp"
+    },
+    {
+        "naam": "Necromus",
+        "prijs": "1900",
+        "beschrijving": "Dark Knight of Legend",
+        "foto": "img/necromus.webp"
+    },
+    {
+        "naam": "Mau",
+        "prijs": "1000",
+        "beschrijving": "Noble Glimmer",
+        "foto": "img/mau.webp"
     }
 ]
