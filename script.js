@@ -1,3 +1,4 @@
+let click = 0;
 async function producten() {
     try {
         const response = await fetch('producten.json');
@@ -41,8 +42,17 @@ document.addEventListener("keydown", function (event) {
     }
 });
 function reload() {
-    localStorage.clear();
-    getproducten();
-    console.log("clear");
+    click++;
+    console.log(click);
+    if (click === 3) {
+        localStorage.clear();
+        getproducten();
+        console.log("clear");
+        click = 0;
+    }
 }
+setInterval(function() {
+    click = 0;
+    console.log(click);
+}, 5000);
 getproducten();
