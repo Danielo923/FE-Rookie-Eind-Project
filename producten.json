@@ -1,56 +1,74 @@
 [
     {
+        "id": "1",
         "naam": "Depresso",
         "prijs": "800",
         "beschrijving": "Several Sleepless Nights Later",
-        "foto": "img/depresso.webp"
+        "foto": "img/depresso.webp",
+        "disabled": false
     },
     {
+        "id": "2",
         "naam": "Cattiva",
         "prijs": "600",
         "beschrijving": "The Cat's Pajamas",
-        "foto": "img/cattiva.webp"
+        "foto": "img/cattiva.webp",
+        "disabled": false
     },
     {
+        "id": "3",
         "naam": "Dumud",
         "prijs": "1000",
         "beschrijving": "Perpetual Procrastinator",
-        "foto": "img/dumud.webp"
+        "foto": "img/dumud.webp",
+        "disabled": false
     },
     {
+        "id": "4",
         "naam": "Mozzarina",
         "prijs": "2000",
         "beschrijving": "Grade A Beef",
-        "foto": "img/mozzarina.webp"
+        "foto": "img/mozzarina.webp",
+        "disabled": false
     },
     {
+        "id": "5",
         "naam": "Chikipi",
         "prijs": "500",
         "beschrijving": "Plump & Juicy",
-        "foto": "img/chikipi.webp"
+        "foto": "img/chikipi.webp",
+        "disabled": false
     },
     {
+        "id": "6",
         "naam": "Hangyu",
         "prijs": "600",
         "beschrijving": "Bringer of Luck",
-        "foto": "img/hangyu.webp"
+        "foto": "img/hangyu.webp",
+        "disabled": false
     },
     {
+        "id": "7",
         "naam": "Bushi",
         "prijs": "800",
         "beschrijving": "Vagrant Warrior",
-        "foto": "img/bushi.webp"
+        "foto": "img/bushi.webp",
+        "disabled": false
     },
     {
+        "id": "8",
         "naam": "Necromus",
         "prijs": "1900",
         "beschrijving": "Dark Knight of Legend",
-        "foto": "img/necromus.webp"
+        "foto": "img/necromus.webp",
+        "disabled": false
     },
     {
+        "id": "9",
         "naam": "Mau",
         "prijs": "1000",
         "beschrijving": "Noble Glimmer",
-        "foto": "img/mau.webp"
+        "foto": "img/mau.webp",
+        "disabled": false
     }
 ]

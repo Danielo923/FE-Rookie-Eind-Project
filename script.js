@@ -29,10 +29,25 @@ async function getproducten() {
         listItem.innerHTML = `
             <td><img class="top3-hero-image" src="${item.foto}" alt="Foto of ${item.naam}"></td>
             <td class="top3-hero-name">${item.naam} | ${item.beschrijving}</td>
-            <td><h2 class="hero-placement">${i + 1}</h2></td>
+            <td><h2 class="hero-placement">${item.prijs}</h2></td>
+            <button id="button${i}" class="addButton" onclick="addProductToCart(${item.id})">
+            Toevoegen aan winkelmandje</button>
         `;
         alleProducten.appendChild(listItem);
     }
+}
+function addProductToCart(id) {
+    console.log(id);
+    const product = JSON.parse(localStorage.getItem("data"));
+    console.log(product[id - 1]);
+    let winkelmandje = [];
+    if (localStorage.getItem("winkelmandje")) {
+        winkelmandje = JSON.parse(localStorage.getItem("winkelmandje"));
+    }
+    if (!winkelmandje.includes(product[id - 1])) {
+        winkelmandje.push(product[id - 1]);
+    }
+    localStorage.setItem("winkelmandje", JSON.stringify(winkelmandje));
 }
 document.addEventListener("keydown", function (event) {
     if (event.key === "c") {
@@ -43,16 +58,17 @@ document.addEventListener("keydown", function (event) {
 });
 function reload() {
     click++;
-    console.log(click);
     if (click === 3) {
         localStorage.clear();
         getproducten();
         console.log("clear");
         click = 0;
     }
+    if (click > 0 && click < 2) {
+        setTimeout(function () {
+            click = 0;
+            console.log(click);
+        }, 3000);
+    }
 }
-setInterval(function() {
-    click = 0;
-    console.log(click);
-}, 5000);
 getproducten();
