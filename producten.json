@@ -1,0 +1,20 @@
+[
+    {
+        "naam": "Depresso",
+        "prijs": "800",
+        "beschrijving": "Several Sleepless Nights Later",
+        "foto": "img/depresso.webp"
+    },
+    {
+        "naam": "Cattiva",
+        "prijs": "600",
+        "beschrijving": "The Cat's Pajamas",
+        "foto": "img/cattiva.webp"
+    },
+    {
+        "naam": "Dumud",
+        "prijs": "1000",
+        "beschrijving": "Perpetual Procrastinator",
+        "foto": "img/dumud.webp"
+    }
+]
