@@ -1,0 +1,55 @@
+html {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    max-height: 90vh;
+    height: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(143, 145, 145);
+    height: 100px;
+}
+.navbar a:first-child img {
+    height: 80px;
+    width: auto;
+    padding-left: 20px;
+}
+.winkelwagen {
+    height: 60px;
+    padding-right: 20px;
+}
+.producten {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: px;
+}
+.producten img {
+    width: 60px;
+}
+.alles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 80vh;
+}
+.inhoud {
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+    padding: 10px 20px;
+    max-width: 90vw;
+    width: 100%;
+    height: 100%;
+}
+.afrekenen {
+    
+}

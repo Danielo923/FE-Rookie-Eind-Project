@@ -17,19 +17,24 @@ body {
     height: 60px;
     padding-right: 20px;
 }
+.title {
+    text-align: center;
+    margin-top: 10px;
+
+}
 .producten {
     background-color: rgb(214, 214, 214);
     display: flex;
-    width: 380px;
+    width: 370px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
 }
 .producten img {
-    width: 350px;
+    width: 340px;
 }
 #producten {
     display: flex;

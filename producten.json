@@ -70,5 +70,29 @@
         "beschrijving": "Noble Glimmer",
         "foto": "img/mau.webp",
         "disabled": false
+    },
+    {
+        "id": "10",
+        "naam": "Pengullet",
+        "prijs": "400",
+        "beschrijving": "Ate Too Much",
+        "foto": "img/pengullet.webp",
+        "disabled": false
+    },
+    {
+        "id": "11",
+        "naam": "Jolthog",
+        "prijs": "300",
+        "beschrijving": "Don't Touch!",
+        "foto": "img/jolthog.webp",
+        "disabled": false
+    },
+    {
+        "id": "12",
+        "naam": "Sweepa",
+        "prijs": "1000",
+        "beschrijving": "Majesty of Fuzz",
+        "foto": "img/sweepa.webp",
+        "disabled": false
     }
 ]

@@ -37,7 +37,6 @@ async function getproducten() {
     }
 }
 function addProductToCart(id) {
-    console.log(id);
     const product = JSON.parse(localStorage.getItem("data"));
     console.log(product[id - 1]);
     let winkelmandje = [];
