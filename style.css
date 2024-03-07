@@ -52,3 +52,12 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: 0px;
+    right: 20px;
+}

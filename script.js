@@ -27,18 +27,18 @@ async function getproducten() {
         const listItem = document.createElement('div');
         listItem.classList.add('producten');
         listItem.innerHTML = `
-            <td><img class="top3-hero-image" src="${item.foto}" alt="Foto of ${item.naam}"></td>
-            <td class="top3-hero-name">${item.naam} | ${item.beschrijving}</td>
-            <td><h2 class="hero-placement">${item.prijs}</h2></td>
+            <img class="top3-hero-image" src="${item.foto}" alt="Foto of ${item.naam}"></td>
+            <p>${item.naam} | ${item.beschrijving}</p>
+            <h2 class="hero-placement">${item.prijs}</h2>
             <button id="button${i}" class="addButton" onclick="addProductToCart(${item.id})">
             Toevoegen aan winkelmandje</button>
         `;
         alleProducten.appendChild(listItem);
     }
+    checkForCart();
 }
 function addProductToCart(id) {
     const product = JSON.parse(localStorage.getItem("data"));
-    console.log(product[id - 1]);
     let winkelmandje = [];
     if (localStorage.getItem("winkelmandje")) {
         winkelmandje = JSON.parse(localStorage.getItem("winkelmandje"));
@@ -48,6 +48,22 @@ function addProductToCart(id) {
     }
     localStorage.setItem("winkelmandje", JSON.stringify(winkelmandje));
 }
+function checkForCart() {
+    if (localStorage.getItem("winkelmandje")) {
+        console.log(localStorage.getItem("winkelmandje").length);
+        const retdot = document.getElementById("retDot");
+        retdot.innerHTML = `
+        <img src="web_fotos/wagen-wit.png" alt="cart" class="winkelwagen">
+        <h1 class="dot"></h1>
+        `;
+    } else {
+        const retdot = document.getElementById("retDot");
+        retdot.innerHTML = `    
+        <img src="web_fotos/wagen-wit.png" alt="cart" class="winkelwagen">
+        `;
+    }
+}
+
 document.addEventListener("keydown", function (event) {
     if (event.key === "c") {
         console.log("clear");
