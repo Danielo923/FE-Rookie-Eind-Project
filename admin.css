@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(143, 145, 145);
+    height: 100px;
+}
+.navbar a:first-child img {
+    height: 80px;
+    width: auto;
+    padding-left: 20px;
+}
+.winkelwagen {
+    height: 60px;
+    padding-right: 20px;
+}
+.title {
+    text-align: center;
+    margin-top: 10px;
+
+}
+section {
+    display: flex;
+    justify-content: center;
+
+}
+.producten {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 2rem 0;
+    border-radius: 1rem;
+}
+.producten div {
+    width: 25%;
+    text-align: center;
+}
+.producten img {
+    width: 4rem;
+}
+.addButton {
+    background-color: rgb(124, 124, 124);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

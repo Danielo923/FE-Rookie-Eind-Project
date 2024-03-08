@@ -47,10 +47,10 @@ function addProductToCart(id) {
         winkelmandje.push(product[id - 1]);
     }
     localStorage.setItem("winkelmandje", JSON.stringify(winkelmandje));
+    checkForCart();
 }
 function checkForCart() {
     if (localStorage.getItem("winkelmandje")) {
-        console.log(localStorage.getItem("winkelmandje").length);
         const retdot = document.getElementById("retDot");
         retdot.innerHTML = `
         <img src="web_fotos/wagen-wit.png" alt="cart" class="winkelwagen">
@@ -69,6 +69,7 @@ document.addEventListener("keydown", function (event) {
         console.log("clear");
         localStorage.clear();
         getproducten();
+        checkForCart();
     }
 });
 function reload() {
@@ -78,6 +79,7 @@ function reload() {
         getproducten();
         console.log("clear");
         click = 0;
+        checkForCart();
     }
     if (click > 0 && click < 2) {
         setTimeout(function () {
