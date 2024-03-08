@@ -13,10 +13,18 @@ function showCart() {
         const listItem = document.createElement('div');
         listItem.classList.add('producten');
         listItem.innerHTML = `
+        <div>
         <img class="top3-hero-image" src="../${item.foto}" alt="Foto of ${item.naam}"></td>
+        </div>
+        <div>
         <p>${item.naam} | ${item.beschrijving}</p>
+        </div>
+        <div>
         <h2 class="hero-placement">${item.prijs}</h2>
+        </div>
+        <div>
         <h3 id="button${i}" class="deleteButton" onclick="deleteCartItems(${item.id})">Delete</h3>
+        </div>
         `;
         alleProducten.appendChild(listItem);
         totaal += item.prijs;
