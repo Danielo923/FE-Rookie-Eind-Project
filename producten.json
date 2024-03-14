@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "naam": "Depresso",
         "prijs": 800,
         "beschrijving": "Several Sleepless Nights Later",
@@ -8,7 +8,7 @@
         "disabled": false
     },
     {
-        "id": "2",
+        "id": 2,
         "naam": "Cattiva",
         "prijs": 600,
         "beschrijving": "The Cat's Pajamas",
@@ -16,7 +16,7 @@
         "disabled": false
     },
     {
-        "id": "3",
+        "id": 3,
         "naam": "Dumud",
         "prijs": 1000,
         "beschrijving": "Perpetual Procrastinator",
@@ -24,7 +24,7 @@
         "disabled": false
     },
     {
-        "id": "4",
+        "id": 4,
         "naam": "Mozzarina",
         "prijs": 2000,
         "beschrijving": "Grade A Beef",
@@ -32,7 +32,7 @@
         "disabled": false
     },
     {
-        "id": "5",
+        "id": 5,
         "naam": "Chikipi",
         "prijs": 500,
         "beschrijving": "Plump & Juicy",
@@ -40,7 +40,7 @@
         "disabled": false
     },
     {
-        "id": "6",
+        "id": 6,
         "naam": "Hangyu",
         "prijs": 600,
         "beschrijving": "Bringer of Luck",
@@ -48,7 +48,7 @@
         "disabled": false
     },
     {
-        "id": "7",
+        "id": 7,
         "naam": "Bushi",
         "prijs": 800,
         "beschrijving": "Vagrant Warrior",
@@ -56,7 +56,7 @@
         "disabled": false
     },
     {
-        "id": "8",
+        "id": 8,
         "naam": "Necromus",
         "prijs": 1900,
         "beschrijving": "Dark Knight of Legend",
@@ -64,7 +64,7 @@
         "disabled": false
     },
     {
-        "id": "9",
+        "id": 9,
         "naam": "Mau",
         "prijs": 1000,
         "beschrijving": "Noble Glimmer",
@@ -72,7 +72,7 @@
         "disabled": false
     },
     {
-        "id": "10",
+        "id": 10,
         "naam": "Pengullet",
         "prijs": 400,
         "beschrijving": "Ate Too Much",
@@ -80,7 +80,7 @@
         "disabled": false
     },
     {
-        "id": "11",
+        "id": 11,
         "naam": "Jolthog",
         "prijs": 300,
         "beschrijving": "Don't Touch!",
@@ -88,7 +88,7 @@
         "disabled": false
     },
     {
-        "id": "12",
+        "id": 12,
         "naam": "Sweepa",
         "prijs": 1000,
         "beschrijving": "Majesty of Fuzz",

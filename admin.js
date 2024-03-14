@@ -1,9 +1,23 @@
+async function producten() {
+    try {
+        const response = await fetch('producten.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch pals');
+        }
+        const data = await response.json();
+        localStorage.setItem("data", JSON.stringify(data));
+        return data;
+    } catch (error) {
+        console.error('Error fetching heroes:', error);
+        throw error;
+    }
+}
 async function getproducten() {
     let data;
     if (localStorage.getItem("data")) {
         data = JSON.parse(localStorage.getItem("data"));
     } else {
-        throw new Error('No data available');
+        data = await producten();
     }
     const alleProducten = document.getElementById('producten');
     alleProducten.innerHTML = '';
@@ -22,7 +36,7 @@ async function getproducten() {
             <h2>${item.prijs}</h2>
             </div>
             <div>
-            <button class="border-green" id="button${i}" class="addButton">
+            <button class="border-green" id="button${i}" class="addButton" onclick="edit(${item.id})">
             Edit</button>
             <button class="border-red" id="button${i}" class="addButton" onclick="deleteItem(${item.id})">
             Delete</button>
@@ -30,6 +44,9 @@ async function getproducten() {
         `;
         alleProducten.appendChild(listItem);
     }
+}
+function edit(id) {
+    window.location.href = `edit.html?id=${id}`;
 }
 function deleteItem(id) {
     let number = `${id}`;
@@ -51,5 +68,11 @@ function deleteItem(id) {
     localStorage.setItem('data', JSON.stringify(data));
     getproducten();
 }
-
+document.addEventListener("keydown", function (event) {
+    if (event.key === "c") {
+        console.log("clear");
+        localStorage.clear();
+        getproducten();
+    }
+});
 getproducten();

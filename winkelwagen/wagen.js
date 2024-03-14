@@ -27,7 +27,8 @@ function showCart() {
         </div>
         `;
         alleProducten.appendChild(listItem);
-        totaal += item.prijs;
+        totaal += parseInt(item.prijs, 10);
+        console.log(totaal);
     }
     if (products.length <= 0) {
         alleProducten.innerHTML = `Winkelmandje is leeg`;
@@ -46,7 +47,7 @@ showCost();
 function deleteCartItems(id) {
     let cart = JSON.parse(localStorage.getItem("winkelmandje"));
     for (let i = 0; i < cart.length; i++) {
-        if (parseInt(cart[i].id, 10) === id) {
+        if (cart[i].id === id) {
             cart.splice(i, 1);
             break;
         }

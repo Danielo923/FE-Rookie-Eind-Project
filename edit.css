@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(143, 145, 145);
+    height: 100px;
+}
+.navbar a:first-child img {
+    height: 80px;
+    width: auto;
+    padding-left: 20px;
+}
+.winkelwagen {
+    height: 60px;
+    padding-right: 20px;
+}
+.alles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alleInfo {
+    background-color: grey;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

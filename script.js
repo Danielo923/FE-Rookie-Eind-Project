@@ -1,4 +1,5 @@
 let click = 0;
+
 async function producten() {
     try {
         const response = await fetch('producten.json');
