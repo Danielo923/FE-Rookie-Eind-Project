@@ -11,15 +11,17 @@
     <nav class="navbar">
         <a href="index.html"><img src="web_fotos/logo.png" alt="."></a>
         <div>
-            <button id="alleItems">Alle Producten</button>
-            <button id="bestellingen">Bestellingen</button>
+            <button id="alleItems" onclick="sorteer1()">Alle Producten</button>
+            <button id="bestellingen" onclick="sorteer2()">Bestellingen</button>
         </div>
         <div>
-            <button id="nieuw">+</button>
+            <button id="nieuw" onclick="create()">+</button>
+            <button id="reset" onclick="resetProducten()">Reset producten</button>
         </div>
     </nav>
     <section>
         <div id="producten">
+            <h1 class="title">Producten</h1>
         </div>
     </section>
 </body>

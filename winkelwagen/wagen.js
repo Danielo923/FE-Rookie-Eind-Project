@@ -28,11 +28,9 @@ function showCart() {
         `;
         alleProducten.appendChild(listItem);
         totaal += parseInt(item.prijs, 10);
-        console.log(totaal);
     }
     if (products.length <= 0) {
         alleProducten.innerHTML = `Winkelmandje is leeg`;
-        console.log("hallo");
     }
     checkForCart();
 }
@@ -74,9 +72,21 @@ function checkForCart() {
         `;
     }
 }
+function addProductToBestellingen() {
+    let bestellingen = [];
+    if (!localStorage.getItem("bestellingen")) {
+        localStorage.setItem("bestellingen", JSON.stringify(bestellingen));
+    }
+    if (localStorage.getItem("bestellingen")) {
+        bestellingen = JSON.parse(localStorage.getItem("bestellingen"));
+        bestellingen.push(JSON.parse(localStorage.getItem("winkelmandje")));
+    }
+    localStorage.setItem("bestellingen", JSON.stringify(bestellingen));
+    emptyCart();
+}
 function emptyCart() {
     if (localStorage.getItem("winkelmandje")) {
-        window.location.href = "order-confirmation.html"; 
+        window.location.href = "order-confirmation.html";
         localStorage.removeItem("winkelmandje");
     }
 }

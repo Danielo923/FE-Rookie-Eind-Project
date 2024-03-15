@@ -47,12 +47,17 @@ async function edit() {
 function saveChanges(id) {
     let existingProducts = JSON.parse(localStorage.getItem('data')) || [];
     const index = existingProducts.findIndex(item => item.id === id);
-    console.log(index);
     existingProducts[index].naam = document.getElementById('naam').value;
+    if (existingProducts[index].naam != "In Progress") {
+        existingProducts[index].disabled = false;
+    } else {
+        existingProducts[index].disabled = true;
+    }
     existingProducts[index].prijs = document.getElementById('prijs').value;
     existingProducts[index].beschrijving = document.getElementById('beschrijving').value;
     existingProducts[index].foto = document.getElementById('foto').value;
     localStorage.setItem('data', JSON.stringify(existingProducts));
+    window.location.href = 'admin.html';
 }
 
 function updateImage() {
