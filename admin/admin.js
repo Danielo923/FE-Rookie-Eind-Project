@@ -80,6 +80,14 @@ async function getproducten() {
             }
             alleProducten.appendChild(items);
         }
+        if (bestellingen.length === 0) {
+            const items = document.createElement('div');
+            items.classList.add('bestellingen');
+            items.innerHTML = `
+            <h1 class="title">Geen bestellingen</h1>
+            `;
+            alleProducten.appendChild(items);
+        }
     }
 }
 function sorteer1() {
