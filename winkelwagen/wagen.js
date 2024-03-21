@@ -90,3 +90,6 @@ function emptyCart() {
         localStorage.removeItem("winkelmandje");
     }
 }
+function goBack() {
+    window.location.href = "../index.html";
+}
