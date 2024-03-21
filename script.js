@@ -30,9 +30,10 @@ async function getproducten() {
         listItem.innerHTML = `
             <img class="top3-hero-image" src="${item.foto}" alt="Foto of ${item.naam}"></td>
             <p>${item.naam} | ${item.beschrijving}</p>
-            <h2 class="hero-placement">${item.prijs}</h2>
-            <button id="button${i}" class="addButton" onclick="addProductToCart(${item.id})">
-            Toevoegen aan winkelmandje</button>
+            <h2 class="hero-placement">${item.prijs} Credits</h2>
+            ${item.disabled ? `<h3 class="disabled">Niet beschikbaar</h3>` :
+        `<button id="button${i}" class="addButton" onclick="addProductToCart(${item.id})">
+            Add to cart</button>`}
         `;
         alleProducten.appendChild(listItem);
     }

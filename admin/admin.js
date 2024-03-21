@@ -28,8 +28,8 @@ async function getproducten() {
         console.log("Nog geen bestellingen gedaan");
     }
     const alleProducten = document.getElementById('producten');
-    alleProducten.innerHTML = '';
     if (sort === "Alle Producten") {
+        alleProducten.innerHTML = '<h1>All Products</h1>';
         for (let i = 0; i < data.length; i++) {
             const item = data[i];
             const listItem = document.createElement('div');
@@ -42,7 +42,7 @@ async function getproducten() {
             <p>${item.naam} | ${item.beschrijving}</p>
             </div>
             <div>
-            <h2>${item.prijs}</h2>
+            <h2>${item.prijs} Credits</h2>
             </div>
             <div>
             <button class="border-green" id="button${i}" class="addButton" onclick="edit(${item.id})">
@@ -55,6 +55,7 @@ async function getproducten() {
         }
     }
     if (sort === "Bestellingen") {
+        alleProducten.innerHTML = '<h1>All Purchases</h1>';
         for (let i = 0; i < bestellingen.length; i++) {
             const items = document.createElement('div');
             items.classList.add('bestellingen');
@@ -73,7 +74,7 @@ async function getproducten() {
                     <p>${item.naam} | ${item.beschrijving}</p>
                 </div>
                 <div>
-                    <h2>${item.prijs}</h2>
+                    <h2>${item.prijs} Credits</h2>
                 </div>
                 `;
                 items.appendChild(listItem);

@@ -17,19 +17,19 @@ async function edit() {
         const pal = data[indexInData];
         edittext.innerHTML = `
             <div>
-            <label for="naam">Naam</label>
+            <label for="naam">Name</label>
             <input type="text" id="naam" name="naam" value="${pal.naam}">
             </div>
             <div>
-            <label for="prijs">prijs</label>
+            <label for="prijs">Price</label>
             <input type="number" id="prijs" name="prijs" value="${pal.prijs}">
             </div>
             <div>
-            <label for="beschrijving">beschrijving</label>
+            <label for="beschrijving">Description</label>
             <input type="text" id="beschrijving" name="beschrijving" value="${pal.beschrijving}">
             </div>
             <div>
-            <label for="foto">foto</label>
+            <label for="foto">Picture</label>
             <input type="text" id="foto" name="foto" value="${pal.foto}">
             </div>
             <div>

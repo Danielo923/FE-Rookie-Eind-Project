@@ -20,7 +20,7 @@ function showCart() {
         <p>${item.naam} | ${item.beschrijving}</p>
         </div>
         <div>
-        <h2 class="hero-placement">${item.prijs}</h2>
+        <h2 class="hero-placement">${item.prijs} Credits</h2>
         </div>
         <div>
         <h3 id="button${i}" class="deleteButton" onclick="deleteCartItems(${item.id})">Delete</h3>
@@ -38,7 +38,7 @@ showCart();
 function showCost() {
     const totalCost = document.getElementById('totaal');
     if (totalCost) {
-        totalCost.innerHTML = `Totaal: ${totaal} Credits`;
+        totalCost.innerHTML = `Total: ${totaal} Credits`;
     }
 }
 showCost();

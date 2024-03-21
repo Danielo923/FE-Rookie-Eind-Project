@@ -35,7 +35,7 @@ section {
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 1rem;
 }
 .producten div {
@@ -78,7 +78,7 @@ div button {
     width: 90vw;
     background-color: rgb(179, 179, 179);;
     flex-wrap: wrap;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 1rem;
 }
 .bestellingen-items{
@@ -87,15 +87,25 @@ div button {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-radius: 1rem;
 
+}
+.bestellingen-items div {
+    width: calc(100% / 3);
+    text-align: center;
 }
 .title {
     margin-top: 10px;
     width: 100%;
 }  
 .image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: auto;
+}
+#producten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

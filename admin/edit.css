@@ -23,10 +23,23 @@ body {
     align-items: center;
 }
 .alleInfo {
-    background-color: grey;
-    width: 80rem;
+    background-color: rgb(199, 199, 199);
+    width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 2rem;
+}
+.alleInfo div {
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+.alleInfo img {
+    height: 8rem;
+    width: auto;
 }
