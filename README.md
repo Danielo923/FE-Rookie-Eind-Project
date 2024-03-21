@@ -38,4 +38,4 @@ I have made a <a href="https://danielo923.github.io/FE-Rookie-Eind-Project/">nor
 <li>The picture of the pal</li>
 <li>An edit button that will save your changes</li>
 </ul>
-<p>If you go back and go to the <strong>Purchases</strong> than you will see the puchases that were made. If there are no purchases than there won't be anything there to see</p>
+<p>If you go back and go to the <strong>Purchases</strong> than you will see the puchases that were made. If there are no purchases than there won't be anything there to see.</p>
