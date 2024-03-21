@@ -60,7 +60,7 @@ async function getproducten() {
             const items = document.createElement('div');
             items.classList.add('bestellingen');
             items.innerHTML = `
-            <h1 class="title">Bestelling ${i + 1}</h1>
+            <h1 class="title">Purchase ${i + 1}</h1>
             `;
             for (let j = 0; j < bestellingen[i].length; j++) {
                 const item = bestellingen[i][j];

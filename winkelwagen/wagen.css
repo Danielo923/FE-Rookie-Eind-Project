@@ -80,6 +80,17 @@ body {
 .deleteButton {
     color: red;
 }
+.deleteButton:active {
+    color: rgb(0, 0, 0);
+}
 .deleteButton:hover {
     cursor: pointer;
+}
+.purchase {
+    border: rgb(255, 0, 0) 2px solid;
+    border-radius: 10px;
+}
+.purchase:active {
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px #000000;
 }
